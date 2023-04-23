@@ -1,0 +1,108 @@
+<h1>Découverte de la plateforme Crosscut</h1>
+
+<h2>Introduction de la première mission</h2>
+
+<p>
+  Ma première mission était de découvrir le fonctionnement de la plateforme ainsi
+  que son utilisation.
+</p>
+
+
+<h2>La plateforme</h2>
+<p>
+  Elle est constituée de 2 parties principales :
+</p>
+<ul>
+  <li>Les ports</li>
+  <li>Les pipelines</li>
+</ul>
+<div class="img_platforme">
+  <img src="assets/Shemas_Crosscur_solution.png" alt="Presentation du schema de la platforme">
+</div>
+<p>
+  Afin de répondre à cet objectif, un document a été mis à ma disposition, me guidant dans la découverte
+  de la plateforme qui m'a permis de créer un flux de données entre un dossier source et un dossier cible.
+  Je devais en outre modifier la donnée ainsi que le format. <br>
+  Pour ce faire il m'a fallu créer 2 ports et 1 pipeline
+</p>
+<div class="brique_mission1_stage">
+  <h3>Les ports</h3>
+  <p>
+    Les ports (de publication et soucription) sont des éléments situés de chaque côté du flux de données. Ils sont les
+    points d'entrée et de sortie de la plateforme et permettent par conséquent de créer un chemin.
+  </p>
+  <div class="img_ports">
+    <img src="assets/port_publication.png" alt="Port Publication">
+    <img src="assets/port_souscription.png" alt="Port Souscription">
+  </div>
+</div>
+<div class="brique_mission1_stage">
+  <h3>Les Pipelines</h3>
+  <p>
+    Lors du passage dans le flux, le message passe par un pipeline qui permet, si on le souhaite, de pouvoir modifier la donnée.
+    pour cela l'utilisation d'un pipeline est nécessaire.
+  </p>
+  <img src="assets/pipeline.png" class="img_pipline" alt="pipeline">
+  <p>
+    Afin de de pouvoir effectuer les modifications sur les données transmises, il m'a fallu comprendre, créer et utiliser
+    des schémas. Pour ce faire, l'utilisation du XSLT était requise ainsi que la compréhension du XML et JSON.
+    Je me suis donc tourné vers le site
+    <a href="https://www.w3schools.com/xml/xsl_intro.asp" target="_blank"> w3schools</a>
+    <br>
+  </p>
+  <img src="assets/XSLT.png" alt="Code XSLT" class="img_xslt">
+</div>
+<div class="brique_mission1_stage">
+  <h2>Une avancée en C#</h2>
+  <p>
+    Afin de comprendre comment la plateforme est développée ainsi que de pouvoir participer à
+    sa mise à jour pour la deuxième mission, j'ai suivi plusieurs tutoriels de C# sur microsoft learn.
+    <br>
+    Ils avaient pour objectif de me faire réviser, découvrir et apprendre divers concepts tel que :
+  </p>
+  <ul>
+    <li>Me familiariser avec .NET.</li>
+    <li>Les classes.</li>
+    <li>L'héritage.</li>
+    <li>Déboguer des applications .NET.</li>
+  </ul>
+  <img src="assets/microsoft_learn.png" alt="microsoft learn" class="microsoft_learn">
+  <img src="assets/c%23_tutoriel_microsoft.png" alt="C# héritage" class="microsoft_learn">
+
+  <p>
+    Tout cela m'a permis de me préparer au mieux à la deuxième mission qui m'a été confiée : la participation à la mise à jour
+    de la plateforme.
+  </p>
+</div>
+<h2>Un plus non négligeable</h2>
+<p>
+  Lors de cette première mission qui avait pour but de me faire découvrir la solution
+  développée par Crosscut ainsi que les valeurs de l'entreprise, j'ai eu la chance de pouvoir
+  assister à une fresque du numérique. <br>
+  Elle m'a permis de découvrir l'ensemble des externalités négatives créées
+  par les outils du numérique tout au long de leurs cycles de vie.
+  <br>
+  Cela passe par la récupération des matériaux nécessaires à sa conception jusqu'a son recyclage si celui-ci est possible.
+
+</p>
+
+
+<div class="nav-stage">
+  <div class="previews_stage">
+    <a routerLink="/entreprise">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
+      </svg>
+      Entreprise
+    </a>
+  </div>
+  <div class="previews_stage">
+    <a routerLink="/mission2Stage">
+      Mission 2
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+      </svg>
+    </a>
+  </div>
+
+</div>

@@ -1,0 +1,83 @@
+
+.experience_cv, .formation_cv, .information_perso_cv, .competence_cv{
+  box-sizing: border-box;
+  width: 50%;
+  margin: 20px auto;
+  padding: 10px 30px;
+  box-shadow: lightgray 4px 4px 20px;
+
+}
+h2, h1{
+  text-align: center;
+}
+
+.formation_cv, .experience_cv{
+  width: 80% ;
+}
+.la_formation, .l_experence{
+
+  box-sizing: border-box;
+  width: 80%;
+  margin: 20px auto;
+  padding: 10px 30px;
+  box-shadow: lightgray 4px 4px 20px;
+}
+
+img{
+  display: block;
+  margin: auto;
+  width: 20em;
+  border-radius: 50%;
+}
+
+.cvbody {
+  margin: 0;
+  color: black;
+  display: block;
+
+}
+
+#BoutonTéléchargementCv svg, #BoutonMailCv svg{
+  color: #999;
+  text-transform: uppercase;
+  text-decoration: none;
+
+}
+#BoutonTéléchargementCv svg:hover, #BoutonMailCv svg:hover{
+  color: #101010;
+  box-shadow: #5e5e5e 4px 4px 20px;
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+#BoutonTéléchargementCv, #BoutonMailCv{
+
+  display: flex;
+  height: 30px;
+  width: 2em;
+  align-items: center;
+  margin: 10px;
+}
+.boutonCv{
+  display: flex;
+}
+#BoutonMailCv{
+  padding-top: 2px;
+}
+.information_perso_cv svg{
+  color: #101010;
+  box-sizing: border-box;
+  border-radius: 30px;
+  height: 30px;
+  width: 2em;
+  align-items: center;
+  margin: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.infoCV{
+  display: flex;
+}
+.infoCV p{
+  padding-top: 1em;
+}
+

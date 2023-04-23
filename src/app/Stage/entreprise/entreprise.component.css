@@ -1,0 +1,28 @@
+h3 {
+  padding-top: 1.5em;
+}
+p{
+  padding-top: 1em;
+
+}
+h4 {
+  padding-top: 5em;
+}
+a:hover{
+
+  color: #000000;
+}
+
+a {
+  color: #575656;
+}
+.lienUtile{
+  padding-top: 5em;
+}
+.img_platforme{
+  padding-top: 4em;
+  padding-bottom: 4em;
+  display: block;
+  margin: auto;
+}
+

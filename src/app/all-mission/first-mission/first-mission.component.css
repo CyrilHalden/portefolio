@@ -1,0 +1,52 @@
+.Brique_mission_gsb{
+  box-sizing: border-box;
+  margin: 20px auto;
+  padding: 10px 30px;
+  box-shadow: lightgray 4px 4px 20px;
+}
+
+h3, h2 {
+  padding-top: 1.5em;
+}
+
+p{
+  padding-top: 1em;
+}
+
+.nav-stage{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3em;
+}
+
+.previews_stage svg, .next_stage svg{
+  color: #999;
+  text-decoration: none;
+  width: 1.5em;
+  align-items: center;
+  padding-bottom: 0;
+}
+
+a:hover, .next_mission svg:hover{
+  color: #101010;
+}
+
+.nav-stage a, .nav-stage a{
+  height: 30px;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: #999;
+}
+
+img{
+  margin-top: 2em;
+  width: 80%;
+}
+.img_bdd{
+  width: 50%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}

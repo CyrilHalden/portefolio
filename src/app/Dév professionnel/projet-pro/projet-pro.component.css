@@ -1,0 +1,13 @@
+h1, h2, h3, h4{
+  padding-bottom: 1.5em;
+}
+.Brique_projet_pro{
+  box-sizing: border-box;
+  margin: 20px auto;
+  padding: 10px 30px;
+  box-shadow: lightgray 4px 4px 20px;
+}
+.img_projet_pro{
+  margin-top: 1em;
+  width: 80%;
+}

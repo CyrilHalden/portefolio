@@ -1,0 +1,36 @@
+.menu-card
+{
+  box-sizing: border-box;
+  width: 50%;
+  margin: 20px auto;
+  padding: 10px 30px;
+  box-shadow: #444242 4px 4px 20px;
+  align-content: center;
+}
+
+.entreprise_home
+{
+  display: flex;
+}
+
+svg
+{
+  width: 100%;
+}
+h1
+{
+  padding-bottom: 1em;
+  text-align: center;
+}
+h2
+{
+  padding-top: 1.5em;
+}
+p
+{
+  margin-top: 1em;
+}
+
+
+
+

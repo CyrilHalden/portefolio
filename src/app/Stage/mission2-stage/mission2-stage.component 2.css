@@ -1,0 +1,55 @@
+.previews_stage svg{
+  color: #999;
+  text-decoration: none;
+  width: 1.5em;
+  align-items: center;
+  padding-bottom: 0;
+
+}
+a:hover, .previews_stage svg:hover{
+  color: #101010;
+}
+.nav-stage svg{
+  height: 30px;
+  text-align: center;
+}
+a{
+  color: #999;
+  text-decoration: none;
+}
+.previews_stage{
+  display: flex;
+}
+svg {
+  padding: 0;
+  margin: 0
+}
+h3 {
+  padding-top: 1.5em;
+}
+p{
+  padding-top: 1em;
+
+}
+h4 {
+  padding-top: 5em;
+}
+
+.brique_mission2{
+  box-sizing: border-box;
+  margin: 20px auto;
+  padding: 10px 30px;
+  box-shadow: lightgray 4px 4px 20px;
+}
+
+.img_front_site{
+  width: 30em;
+  margin: 3em;
+
+}
+.img_front{
+  width: 70%;
+  margin: 3em;
+}
+img {
+}

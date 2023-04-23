@@ -1,0 +1,72 @@
+.previews_stage svg, .next_stage svg{
+  color: #999;
+  text-decoration: none;
+  width: 1.5em;
+  align-items: center;
+  padding-bottom: 0;
+
+}
+a:hover, .next_stage svg:hover, .previews_stage svg:hover {
+  color: #101010;
+}
+.nav-stage a, .nav-stage a{
+  height: 30px;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+  color: #999;
+}
+.nav-stage{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3em;
+}
+.previews_stage, .next_stage{
+  display: flex;
+}
+svg {
+  padding-bottom: 0;
+}
+
+h3, h2 {
+  padding-top: 1.5em;
+}
+p{
+  padding-top: 1em;
+}
+h4 {
+  padding-top: 5em;
+}
+.brique_mission1_stage{
+  box-sizing: border-box;
+  margin: 20px auto;
+  padding: 10px 30px;
+  box-shadow: lightgray 4px 4px 20px;
+}
+.img_platforme img{
+  margin-top: 1em;
+  width: 80%;
+}
+.img_ports img {
+  width: 30%;
+  margin-top: 2em;
+}
+.img_ports{
+  display: flex;
+  justify-content: space-around;
+}
+.img_pipline{
+  width: 70%;
+  margin-top: 2em;
+}
+.img_xslt{
+  width: 70%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.microsoft_learn{
+  width: 70%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
