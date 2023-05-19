@@ -1,0 +1,33 @@
+.Brique_mission_gsb_rapport{
+    box-sizing: border-box;
+    margin: 20px auto;
+    padding: 10px 30px;
+    box-shadow: lightgray 4px 4px 20px;
+}
+
+h3, h2 {
+    padding-top: 1.5em;
+}
+
+p{
+    padding-top: 1em;
+}
+
+a:hover{
+    color: #101010;
+}
+
+a{
+    text-decoration: none;
+    color: #999;
+}
+
+img{
+    margin-top: 2em;
+    width: 80%;
+}
+.img_bdd{
+    width: 50%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}

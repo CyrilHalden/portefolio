@@ -1,1 +1,117 @@
-<p>second-mission works!</p>
+<h1>GSB frais (WPF)</h1>
+
+<h2>Introduction</h2>
+<br>
+<p>
+    En ce basant sur un programe déja éxistant dévellopé en
+    <a href="https://learn.microsoft.com/fr-fr/visualstudio/get-started/csharp/tutorial-wpf?view=vs-2022" target="_blank"> WPF</a>
+    (développement interface en C#),une base de données
+    et une API REST d'évelopper en PHP, il nous à été demandé de lui apporté des amélioration afin d'être
+    en adéquation avec la demande des utilisateurs.
+    Dans la continuité de la première mission, elle c'est efféctué en groupe de 3 personnes.
+</p>
+<div class="Brique_mission_gsb_rapport">
+    <h2>La mission</h2>
+    <p>
+        En ce basant sur un model existant, nous avons du effectuer les modification demandé afin d'amélioré le programe.
+
+        <br>
+        cette mission c'est découpé en 6 parties :
+    </p>
+    <h3>Ajout d'un rapport</h3>
+    <ul>
+        <li>La secrétaire demande à ajouter un rapport</li>
+        <li>Le système retourne un formulaire permettant d’ajouter un rapport,
+            avec une liste de visiteurs disponibles, des listes permettant d’obtenir un médecin,
+            une liste de famille de médicaments et des champs de saisie</li>
+        <li>La secrétaire sélectionne les informations, effectue les saisies et valide</li>
+        <li>Le système enregistre les informations</li>
+    </ul>
+    <h3>Modifier un rapport</h3>
+    <ul>
+        <li>La secrétaire demande à modifier un rapport</li>
+        <li>Le système retourne un formulaire de recherche du rapport avec une sélection de dates et de visiteurs</li>
+        <li>La secrétaire sélectionne les dates et le visiteur</li>
+        <li>La secrétaire sélectionne les dates et le visiteur</li>
+        <li>Le système retourne les rapports concernant le visiteur et la date</li>
+        <li>La secrétaire sélectionne un rapport parmi ceux présenté</li>
+        <li>Le système retourne un formulaire avec les informations du rapport sélectionné</li>
+        <li>La secrétaire effectue des modifications (bilan et motif)</li>
+        <li>Le système enregistre les mises à jour</li>
+    </ul>
+    <h3>Visualiser un rapport</h3>
+    <ul>
+        <li>La secrétaire demande à visualiser des rapports</li>
+        <li>le système retourne un formulaire avec des listes de filtres</li>
+        <li>La secrétaire sélectionne les informations dans les listes</li>
+        <li>Le système génère un fichier XML avec les différents rapports concernés</li>
+    </ul>
+</div>
+<div class="Brique_mission_gsb_rapport">
+    <h2>La répartition</h2>
+    <p>
+        Afin de répondre au mieux à l'ensemble de la mission tout en le faisant de la façon
+        la plus efficace, nous nous sommes répartie les taches. <br>
+        j'ai personnellement effectué la modification de rapport.
+    </p>
+    <h2>Azure DevOps</h2>
+    <p>
+        Afin de définir au mieux la répartition des taches ainsi que d'avoir un dépos afin de partager nos avancées,
+        nous avons utilisé Azure DevOps.
+    </p>
+    <p>Répartition des tache sur Azure DevOps</p>
+    <img src="assets/GSB_Rapport_repartition.png" alt="Répartition des tache sur Azure DevOps"><br>
+    <p>Détails des tache sur Azure DevOps</p>
+    <img src="assets/GSB_Rapport_details.png" alt="Détails des tache sur Azure DevOps">
+</div>
+<div class="Brique_mission_gsb_rapport">
+    <h2>Ma mission</h2>
+    <h3>Début</h3>
+    <p>
+        Pour commencer, il m'a tout d'abord fallut créer le composant en XAML et C# afin d'avoir une base de travail.
+        <br>
+        Une fois cela fais, je les ai connectés au programme déjà existant.
+    </p>
+    <img src="assets/Ajout_Rapport_composant.png" alt="Ajout du composant">
+    <img src="assets/Ajout_Rapport_WPF_main.png" alt="Ajout du lien sur XAML Main">
+    <img src="assets/Ajout_Rapport_CS_main.png" alt="Ajout du lien sur C# Main">
+
+    <h3>L'interface</h3>
+    <p>
+        Afin de respecté au mieux l'interface demander j'ai effectuer plusieur StackPanel et y ajouté 2 comboBox pour
+        le filtrage des date et Visiteur, un DataGrid pour l'affichage des résultats (chaque colone à été bindé)
+        ainsi que deux TextBox pour pouvoir permettre à l'utlisateur de modifier le bilan et le motif (les deux bindé aussi)
+    </p>
+    <img src="assets/Ajouter_Rapport_XAML.png" alt="Page XAML de Ajout Rapport">
+    <h3>Le back</h3>
+    <p>
+        Pour la partie C#, j'ai effectué une initaialisation une requete est efféctuée permetant de récupérer l'ensemble
+        des visiteur afin que l'utilisateur puisse le séléctionner dans le premier filtre . <br>
+        une fois cela effecté, l'utilisateur pourra selectionner dans le deuxième filtre la date voulus parmis celle disponible
+        (les date son récupérée grace à une requet puis sont trié dans l'ordre croissant et les doublons suprimé). <br>
+        A la selection de la date, l'ensemble des rendez-vous sera affiché dans le DataGride après avoir été récupéré par
+        une nouvelle requete. <br>
+        Pour terminé, lors de la séléction d'un des rapports, il sera possible pour l'utilisateur de modifier aussi bien le motif que
+        le bilan dans la TextBox et validé. Une fois fait, les information sont récupérer puis envoyé a l'API REST afin qu'
+        elle soit sauvgardée dans la base de donnée.
+    </p>
+    <img src="assets/Ajouter_Rapport_Init_Envoie_Modif_CS.png" alt="L'initialisation et l'envoie à l'API REST">
+    <img src="assets/Ajouter_Rapport_DataGrid_CS.png" alt="Requete pour remplir le DataGrid">
+
+    <h3>Les petit plus qui change tous</h3>
+    <p>
+        Dans le bute d'amélioré l'application, plusieur choses on été ajoutée :
+    </p>
+    <ul>
+        <li>Des try and catch on été ajouté afin que l'application ne crash pas.</li>
+        <li>Dans les catch, un trace à été ajouté pour permettre de tracer les erreur par le dévloppeur.</li>
+        <li>Le Tiquet envoyé à chaque requete et récupéré puis utilisé pour remplacer celui déja éxistant
+            permétant ainsi à la sercétaire de continué à effectué des action sur GSB Rapport  </li>
+    </ul>
+    <h3>Le résultat</h3>
+    <img src="assets/Ajouter_Rapport_presentation_final.png" alt="Présentation final">
+    <img src="assets/Ajouter_Rapport_Affichage_Rapport.png" alt="Affichage du rapport">
+    <img src="assets/Ajouter_Rapport_Selection_Rapport.png" alt="Sélection du rapport">
+    <img src="assets/Ajouter_Rapport_Modification.png" alt="Modification du rapport">
+    <img src="assets/Ajouter_Rapport_Modifier.png" alt="Rapport modifié avec succès">
+</div>

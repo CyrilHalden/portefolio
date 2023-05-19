@@ -17,4 +17,7 @@ a:hover{
 a {
   color: #9b9b9b;
 }
+.side-barre-page{
+  position: sticky;
+}
 

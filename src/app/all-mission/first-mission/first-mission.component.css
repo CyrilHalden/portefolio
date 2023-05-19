@@ -13,27 +13,8 @@ p{
   padding-top: 1em;
 }
 
-.nav-stage{
-  display: flex;
-  justify-content: space-between;
-  margin-top: 3em;
-}
-
-.previews_stage svg, .next_stage svg{
-  color: #999;
-  text-decoration: none;
-  width: 1.5em;
-  align-items: center;
-  padding-bottom: 0;
-}
-
-a:hover, .next_mission svg:hover{
+a:hover{
   color: #101010;
-}
-
-.nav-stage a, .nav-stage a{
-  height: 30px;
-  text-align: center;
 }
 
 a{
